@@ -18,6 +18,7 @@ The grammar is quite simple. A _Statemachine_ has _states_ and _transitions_. _S
 ![image](https://github.com/MasterIS-MIS/statemachine/assets/72299672/af95e53f-8a1a-4fad-b071-113afc2a0ee8)
 
 An example of instance of the previous grammar is:
+
 ![image](https://github.com/MasterIS-MIS/statemachine/assets/72299672/0754eb24-924c-41e0-8ee1-ae1dfada1ef6)
 
 There are two model to text transformations defined:
