@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:StateMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sm="http://lsi.us.es.mis/statemachine" xsi:schemaLocation="http://lsi.us.es.mis/statemachine sm.ecore">
+  <states name="A" outgoing="//@transitions.0 //@transitions.2" incoming="//@transitions.2 //@transitions.3"/>
+  <states name="B" outgoing="//@transitions.1" incoming="//@transitions.0"/>
+  <states name="C" outgoing="//@transitions.3" incoming="//@transitions.1"/>
+  <transitions from="//@states.0" to="//@states.1"/>
+  <transitions from="//@states.1" to="//@states.2"/>
+  <transitions from="//@states.0" to="//@states.0"/>
+  <transitions from="//@states.2" to="//@states.0"/>
+</sm:StateMachine>

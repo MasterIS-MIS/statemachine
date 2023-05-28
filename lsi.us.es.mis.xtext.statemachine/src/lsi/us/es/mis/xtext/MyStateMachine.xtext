@@ -1,0 +1,16 @@
+grammar lsi.us.es.mis.xtext.MyStateMachine with org.eclipse.xtext.common.Terminals
+
+generate myStateMachine "http://www.us.lsi/es/mis/xtext/MyStateMachine"
+
+StateMachine:
+'states:'
+	(states+=State) (',' states+=State)*
+('transitions:'
+	transitions+= Transition+)?
+;
+State:
+	name=ID ;
+	
+Transition:
+	from=[State]'->'to=[State]
+;	
