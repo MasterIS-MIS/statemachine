@@ -9,9 +9,11 @@ that are modelled by means of the _State_ and _Transition_ metaclasses, respecti
 
 ## lsi.us.es.mis.statemachine.design
 Project that contains the specification of the Sirius generated graphical editor. The specification of the editor is in the statemachine.odesign file. This is a DSL for specifying graphical editors in Sirius.
+
 ![image](https://github.com/MasterIS-MIS/statemachine/assets/72299672/99699c9f-b894-4555-8df1-6a55c65f1d56)
 
 An example of instance of the graphical modelling language is:
+
 <img width="239" alt="image" src="https://github.com/MasterIS-MIS/statemachine/assets/72299672/584287e6-42a2-4f03-84f3-9becd05ee758">
 
 ## lsi.us.es.mis.xtext.statemachine.* 
