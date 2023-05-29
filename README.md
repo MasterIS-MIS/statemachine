@@ -24,8 +24,11 @@ The grammar is quite simple. A _Statemachine_ has _states_ and _transitions_. _S
 
 An example of instance of the previous grammar is:
 
-![image](https://github.com/MasterIS-MIS/statemachine/assets/72299672/0754eb24-924c-41e0-8ee1-ae1dfada1ef6)
+<img width="84" alt="image" src="https://github.com/MasterIS-MIS/statemachine/assets/72299672/de56b7f4-7602-4428-8d28-11fb6579bbc2">
 
 There are two model to text transformations defined:
 * StateMachine to GraphViz
+It generates a graphviz file to represent the statemachine as a graph.
+
 * StateMachine to Java
+It generates the java code to run the statemachine
