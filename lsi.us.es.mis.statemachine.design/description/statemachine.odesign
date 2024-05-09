@@ -5,7 +5,7 @@
       <metamodel href="../../lsi.us.es.mis.statemachine/model/sm.ecore#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="StateNode" domainClass="sm::State">
-          <style xsi:type="style:BundledImageDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW" shape="dot">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
@@ -31,7 +31,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Create Transition" edgeMappings="//@ownedViewpoints[name='StateMachineViewpoint']/@ownedRepresentations[name='StateMachineDiagram']/@defaultLayer/@edgeMappings[name='TransitionEdge']" iconPath="/lsi.us.es.mis.statemachine.design/icons/transition.png">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Create Transition" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='StateMachineViewpoint']/@ownedRepresentations[name='StateMachineDiagram']/@defaultLayer/@edgeMappings[name='TransitionEdge']" iconPath="/lsi.us.es.mis.statemachine.design/icons/transition.png">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -39,8 +39,8 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="sm::Transition" referenceName="transition">
                 <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="from" valueExpression="var:source"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="to" valueExpression="var:target"/>
                 </subModelOperations>
                 <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="outgoing" valueExpression="var:instance"/>
