@@ -32,3 +32,6 @@ It generates a graphviz file to represent the statemachine as a graph.
 
 * StateMachine to Java
 It generates the java code to run the statemachine
+
+## lsi.us.es.mis.statemachine.samples
+Project with examples of instances of the textual language and the result of the model to text transformation for each instance. The src folder contains the grammar instances and the src-gen contains the generated stuff.
